@@ -2,10 +2,10 @@
   "name": "PiliPlus",
   "identifier": "io.github.piliplus.altstore.source",
   "website": "https://github.com/bggRGjQaUbCoE/PiliPlus",
-  "subtitle": "PiliPlus AltStore 源（自动同步上游 Releases）",
+  "subtitle": "Unofficial PiliPlus AltStore source",
   "description": "PiliPlus 是使用 Flutter 开发的 BiliBili 第三方客户端，基于 pilipala 与 PiliPalaX，支持推荐/热门/分区、番剧、直播、动态、搜索、缓存离线等完整功能。本源收录上游发布的未签名 iOS 构建（ipa），可通过 AltStore / SideStore 使用 Apple ID 自签安装。",
   "iconURL": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/assets/images/logo/logo.png",
-  "tintColor": "#FB7299",
+  "tintColor": "#5CB67B",
   "featuredApps": [
     "com.example.piliplus"
   ],
@@ -23,7 +23,7 @@
       "downloadURL": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/download/2.2.0.2/PiliPlus_ios_2.2.0%2B5598.ipa",
       "size": 24933082,
       "iconURL": "https://raw.githubusercontent.com/bggRGjQaUbCoE/PiliPlus/main/assets/images/logo/logo.png",
-      "tintColor": "#FB7299",
+      "tintColor": "#5CB67B",
       "category": "entertainment",
       "screenshots": {
         "iphone": [
@@ -587,7 +587,7 @@
       "date": "2026-11-03T07:43:02Z",
       "identifier": "release-2.2.0.2",
       "notify": true,
-      "tintColor": "#FB7299",
+      "tintColor": "#5CB67B",
       "title": "PiliPlus 2.2.0.2",
       "url": "https://github.com/bggRGjQaUbCoE/PiliPlus/releases/tag/2.2.0.2"
     }

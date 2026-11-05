@@ -25,18 +25,18 @@ UPSTREAM_REPO = "bggRGjQaUbCoE/PiliPlus"
 
 SOURCE_NAME = "PiliPlus"
 SOURCE_IDENTIFIER = "io.github.piliplus.altstore.source"
-SOURCE_SUBTITLE = "PiliPlus AltStore 源（自动同步上游 Releases）"
 
 BUNDLE_ID = "com.example.piliplus"
 DEVELOPER_NAME = "bggRGjQaUbCoE"
 MIN_OS_VERSION = "15.0"  # MinimumOSVersion inside the released ipa
-TINT_COLOR = "#FB7299"
+TINT_COLOR = "#5CB67B"  # dominant color of the app logo (assets/images/logo/logo.png)
 CATEGORY = "entertainment"
 
 WEBSITE = f"https://github.com/{UPSTREAM_REPO}"
 ICON_URL = f"https://raw.githubusercontent.com/{UPSTREAM_REPO}/main/assets/images/logo/logo.png"
 SCREENSHOT_BASE = f"https://raw.githubusercontent.com/{UPSTREAM_REPO}/main/assets/screenshots/"
 
+SOURCE_SUBTITLE = "Unofficial PiliPlus AltStore source"
 SUBTITLE = "使用 Flutter 开发的 BiliBili 第三方客户端"
 DESCRIPTION = (
     "PiliPlus 是使用 Flutter 开发的 BiliBili 第三方客户端，基于 pilipala 与 PiliPalaX，"

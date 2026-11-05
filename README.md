@@ -6,14 +6,14 @@
 
 ## 添加源
 
-在 AltStore / SideStore 的 **Sources（源）** 页面点击 `+`，填入以下任一地址（把 `<用户名>/<仓库名>` 替换为本仓库推送后的实际地址）：
+在 AltStore / SideStore 的 **Sources（源）** 页面点击 `+`，填入以下任一地址：
 
 ```
-https://raw.githubusercontent.com/<用户名>/<仓库名>/main/generated/apps.json
+https://raw.githubusercontent.com/Pyramid-RJ/PiliPlus-altstore-source/main/generated/apps.json
 ```
 
 ```
-https://raw.githubusercontent.com/<用户名>/<仓库名>/main/alt_store.json
+https://raw.githubusercontent.com/Pyramid-RJ/PiliPlus-altstore-source/main/alt_store.json
 ```
 
 两个地址内容完全一致，只是文件名风格不同（`alt_store.json` 为经典命名，`generated/apps.json` 与 Kazumi 源一致）。
