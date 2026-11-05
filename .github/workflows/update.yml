@@ -1,0 +1,45 @@
+name: Update Source
+
+on:
+  schedule:
+    # 每 6 小时检查一次上游 PiliPlus 的新 Release
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-source
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate source JSON
+        id: generate
+        run: python3 scripts/generate.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push if changed
+        env:
+          LATEST_TAG: ${{ steps.generate.outputs.latest_tag }}
+        run: |
+          if [[ -n "$(git status --porcelain -- alt_store.json generated)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add alt_store.json generated/apps.json
+            git commit -m "Update to $LATEST_TAG"
+            git push
+          else
+            echo "No changes detected, skipping commit"
+          fi
